@@ -1,0 +1,19 @@
+# Core & PDF manipulation
+PyPDF2>=3.0.0
+
+# Encoding & Character detection
+chardet>=5.0.0
+# python-magic (Optional: Note that Windows requires python-magic-bin)
+# python-magic-bin>=0.4.14; platform_system == "Windows"
+# python-magic>=0.4.27; platform_system != "Windows"
+
+# Web Scraping & Automation
+beautifulsoup4>=4.12.0
+playwright>=1.40.0
+
+# Google APIs & CLI Utilities
+google-api-python-client>=2.100.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.0
+tqdm>=4.66.0
+requests>=2.31.0

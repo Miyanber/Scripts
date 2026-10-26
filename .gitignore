@@ -1,0 +1,78 @@
+### --- Python 関連 --- ###
+# 実行時に生成されるキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# 仮想環境（venv, .venv など）
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook のチェックポイント
+.ipynb_checkpoints
+
+
+### --- JavaScript / Node.js 関連 --- ###
+# 依存ライブラリ
+node_modules/
+jspm_packages/
+
+# ビルド成果物
+.next/
+out/
+dist/
+build/
+
+# ログファイル
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+### --- OS / エディタ関連 --- ###
+# macOS 特有のファイル
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 特有のファイル
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+### --- 機密情報 (重要！) --- ###
+# APIキーや環境変数が書かれたファイル
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+token.json
+*.pem
+*.key
+
+
+### 以下, スクリプト個別のignoreファイル ###
+python/booklet-to-normal/pdf
+python/drive-folder-copy/logs
+python/encoding/target
+python/export-google-forms/exported_forms
+python/export-google-forms/playwright_google_context
+python/export-google-forms/playwright_profile
+python/export-google-forms/class_archive.html
+
+js/chromium_test/screenshots
+js/chromium_test/__azurite_db_table__.json
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chart {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div>テスト</div>
+    <div id="response">レスポンス</div>
+    <iframe width="600" height="370" seamless frameborder="0" scrolling="no"
+        src="https://docs.google.com/spreadsheets/d/e/YOUR_SHEET_ID/pubchart?oid=YOUR_CHART_ID&amp;format=interactive"></iframe>
+</body>
+<script>
+    (async () => {
+        console.log("fetch開始");
+        const response = await fetch("http://localhost:7071/api/HttpTrigger1?name=hello", {
+            mode: "no-cors",
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        const content = await response;
+        console.log(content);
+    })();
+</script>
+
+</html>
